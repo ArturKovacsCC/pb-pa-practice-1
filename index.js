@@ -10,7 +10,7 @@ const items = [
     },
     {
         text: "have a lunch with my boss",
-        done: false
+        done: true
     },
     {
         text: "swim with sharks",
@@ -27,6 +27,7 @@ function renderList() {
     for (const item of items) {
         const element = document.createElement("div");
         list.append(element);
+        element.classList.add("list-item");
         const button = document.createElement("button");
         element.append(button);
         button.textContent = "✓";
