@@ -2,7 +2,7 @@
 const items = [
     {
         text: "eat a croissant in France",
-        done: false,
+        done: false
     },
     {
         text: "visit tokyo",
@@ -14,12 +14,12 @@ const items = [
     },
     {
         text: "go to space",
-        done: false,
+        done: false
     },
     {
         text: "swim with sharks",
         done: false
-    },
+    }
 ]
 
 function renderList() {
