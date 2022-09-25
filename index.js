@@ -1,0 +1,39 @@
+
+const items = [
+    {
+        text: "fly in space",
+        done: false,
+    },
+    {
+        text: "visit tokyo",
+        done: true
+    },
+    {
+        text: "have a lunch with my boss",
+        done: false
+    },
+    {
+        text: "swim with sharks",
+        done: false
+    },
+    {
+        text: "eat a croissant in France",
+        done: false,
+    }
+]
+
+function renderList() {
+    const list = document.querySelector("#list");
+    for (const item of items) {
+        const element = document.createElement("div");
+        list.append(element);
+        const button = document.createElement("button");
+        element.append(button);
+        button.textContent = "✓";
+        const text = document.createElement("span");
+        text.textContent = item.text;
+        element.append(text);
+    }
+}
+
+renderList();
