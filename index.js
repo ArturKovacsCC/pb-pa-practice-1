@@ -5,7 +5,7 @@ const items = [
         done: false
     },
     {
-        text: "visit tokyo",
+        text: "visit Tokyo",
         done: true
     },
     {
